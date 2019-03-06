@@ -20,7 +20,9 @@ Tai yra žiniatinklio aplikacijos, skirtos pokalbiams tarp registruotų vartotoj
 
 #### 4. Varototjas, gali keisti šiuos savo paskyros duomenis:
 * vartotojo slaptažodį
-* vartotojo slapyvardį
+* vartotojo slapyvardį (nickname)
+
+#### 5. Vartotojų paskyrų slaptažodžiai saugomi užšifruoti.
 
 ## Nefunkciniai reikalavimai
 #### Aplikacija kuriama, panaudojus šias technologijas:
