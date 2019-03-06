@@ -1,2 +1,2 @@
-# Pokalabių aplikacija, veikianti tinklalapių naršyklėje.
+# Pokalbių aplikacija, veikianti tinklalapių naršyklėje.
 ## Įvadas
