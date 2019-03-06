@@ -21,3 +21,10 @@ Tai yra žiniatinklio aplikacijos, skirtos pokalbiams tarp registruotų vartotoj
   - žinutės autoriaus slapyvardžio (vartotojo vardo, jei vartotojas slapyvardžio nenurodė)
   - žinutės teksto
 * teksto įvesties laukas, kuriame vartotojas įveda žinutės tesktą ir išsiunčia paspaudęs ENTER klavišą
+
+## Nefunkciniai reikalavimai
+#### Aplikacija kuriama, panaudojus šias technologijas:
+* Java 8
+* Spring
+* JavaScript
+* Reliacinė duomenų bazė H2
