@@ -9,18 +9,19 @@ Tai yra žiniatinklio aplikacijos, skirtos pokalbiams tarp registruotų vartotoj
 * vartotojo slaptažodis - būtinas
 * vartotojo slapyvardis (nickname) - unikalus, nebūtinas
 
-#### 2. Įėjęs į aplikaciją varototjas, gali keisti šiuos savo paskiros duomenis:
-* vartotojo slaptažodį
-* vartotojo slapyvardį
+#### 2. Vartotojai, jau turintys savo paskyrą, norėdami dalyvauti pokalbyje, turi prisijungti prie aplikacijos, įvesdami savo vartotojo vardą ir slaptažodį.
 
-#### 3. Vartotojai, jau turintys savo paskyrą, norėdami dalyvauti pokalbyje, turi prisijungti prie aplikacijos, įvesdami savo vartotojo vardą ir slaptažodį.
-
-#### 4. Įėjusiems į aplikaciją vartotojams pateikiamas du teksto laukai:
+#### 3. Įėjusiems į aplikaciją vartotojams pateikiami tokie sąsajos elementai:
 * teksto išvesties laukas, kuriame vaizuojamos visų vartotojų įvestos žinutės, sudarytos iš:
   - žinutės įvesties laiko
   - žinutės autoriaus slapyvardžio (vartotojo vardo, jei vartotojas slapyvardžio nenurodė)
   - žinutės teksto
 * teksto įvesties laukas, kuriame vartotojas įveda žinutės tesktą ir išsiunčia paspaudęs ENTER klavišą
+* vartojo meniu savo paskyros duomenų tvarkymui
+
+#### 4. Varototjas, gali keisti šiuos savo paskyros duomenis:
+* vartotojo slaptažodį
+* vartotojo slapyvardį
 
 ## Nefunkciniai reikalavimai
 #### Aplikacija kuriama, panaudojus šias technologijas:
