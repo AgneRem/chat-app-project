@@ -24,7 +24,7 @@ Tai yra žiniatinklio aplikacijos, skirtos pokalbiams tarp registruotų vartotoj
 
 #### 5. Vartotojų paskyrų slaptažodžiai saugomi užšifruoti.
 
-#### 6. Vartotojui ištrynus savo paskykrą, jo žinutės neištrinamos, bet pažymimos, taip kad kiti pokalbio dalyviai matytų.
+#### 6. Vartotojui ištrynus savo paskykrą, jo žinutės neištrinamos, bet pažymimos taip, kad matytų kiti pokalbio dalyviai.
 
 ## Nefunkciniai reikalavimai
 #### Aplikacija kuriama, panaudojus šias technologijas:
