@@ -11,7 +11,7 @@ Tai yra žiniatinklio aplikacijos, skirtos pokalbiams tarp registruotų vartotoj
 #### 2. Vartotojas, jau turintis savo paskyrą, norėdamas dalyvauti pokalbyje, turi prisijungti prie aplikacijos, įvesdamas savo vartotojo vardą ir slaptažodį.
 
 #### 3. Įėjusiam į aplikaciją vartotojui pateikiami tokie sąsajos elementai:
-* teksto išvesties laukas, kuriame vaizuojamos visų vartotojų įvestos žinutės, sudarytos iš:
+* teksto išvesties laukas, kuriame vaizduojamos visų vartotojų įvestos žinutės, sudarytos iš:
   - žinutės įvesties laiko
   - žinutės autoriaus slapyvardžio (vartotojo vardo, jei vartotojas slapyvardžio nenurodė)
   - žinutės teksto
@@ -23,6 +23,8 @@ Tai yra žiniatinklio aplikacijos, skirtos pokalbiams tarp registruotų vartotoj
 * vartotojo slapyvardį (nickname)
 
 #### 5. Vartotojų paskyrų slaptažodžiai saugomi užšifruoti.
+
+#### 6. Vartotojui ištrynus savo paskykrą, jo žinutės neištrinamos, bet pažymimos, taip kad kiti pokalbio dalyviai matytų.
 
 ## Nefunkciniai reikalavimai
 #### Aplikacija kuriama, panaudojus šias technologijas:
