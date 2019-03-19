@@ -28,7 +28,9 @@ Tai yra žiniatinklio aplikacijos, skirtos pokalbiams tarp registruotų vartotoj
 
 ## Nefunkciniai reikalavimai
 #### Aplikacija kuriama, panaudojus šias technologijas:
+##### Backend dalis:
 * Java 8
-* Spring
-* JavaScript
+* Spring Boot
 * Reliacinė duomenų bazė H2
+##### Frontend dalis:
+* React
