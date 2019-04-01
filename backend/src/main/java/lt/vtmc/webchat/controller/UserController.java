@@ -52,6 +52,7 @@ public class UserController {
 	}
 
 	@GetMapping("/users/{username}")
+	@PreAuthorize("hasRole('USER')")
 	public UserProfile getUserProfile(
 			@PathVariable(value = "username") String username) {
 		User user = userRepository.findByUsername(username)
