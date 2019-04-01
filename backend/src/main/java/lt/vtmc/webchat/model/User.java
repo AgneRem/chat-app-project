@@ -1,18 +1,72 @@
 package lt.vtmc.webchat.model;
 
-import javax.persistence.Column;
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+import org.hibernate.annotations.NaturalId;
+
+import lt.vtmc.webchat.model.audit.DateAudit;
 
 @Entity
-public class User {
+@Table(name = "users", uniqueConstraints = {
+		@UniqueConstraint(columnNames = { "username" }),
+		@UniqueConstraint(columnNames = { "nickname" }),
+		@UniqueConstraint(columnNames = { "email" }) })
+public class User extends DateAudit {
+
+	private static final long serialVersionUID = 213396134652522329L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+
+	@NotBlank
+	@Size(min = 4, max = 20)
+	private String username;
+
+	@Size(max = 50)
+	private String nickname;
+
+	@NaturalId
+	@NotBlank
+	@Size(max = 40)
+	@Email
+	private String email;
+
+	@NotBlank
+	@Size(min = 6, max = 100)
+	private String password;
+
+	@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(name = "user_roles",
+				joinColumns = @JoinColumn(name = "user_id"),
+				inverseJoinColumns = @JoinColumn(name = "role_id"))
+	private Set<Role> roles = new HashSet<>();
+
+	public User() {
+	}
+
+	public User(String username, String nickname, String email,
+			String password) {
+		this.username = username;
+		this.nickname = nickname;
+		this.email = email;
+		this.password = password;
+	}
 
 	public Long getId() {
 		return id;
@@ -38,6 +92,14 @@ public class User {
 		this.nickname = nickname;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public String getPassword() {
 		return password;
 	}
@@ -46,14 +108,11 @@ public class User {
 		this.password = password;
 	}
 
-	@NotNull
-	@Column(unique = true)
-	private String username;
-	
-	@Column(unique = true)
-	private String nickname;
-	
-	@NotNull
-	private String password;
+	public Set<Role> getRoles() {
+		return roles;
+	}
 
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
 }
